@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an Appointment - Your Practice Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #4a90e2;
+            --light-blue: #87ceeb;
+        }
+        
+        body {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+            color: white;
+        }
+        
+        .nav-link {
+            font-size: 1.2rem;
+            color: white !important;
+        }
+        
+        .appointment-form {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        
+        .form-control {
+            font-size: 1.1rem;
+            padding: 0.75rem;
+        }
+        
+        .form-label {
+            font-weight: 500;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+        }
+        
+        .contact-info {
+            font-size: 1.2rem;
+        }
+        
+        .info-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gradient-bg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#" style="font-size: 1.5rem;">Your Practice Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="appointments.html">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Appointment Header -->
+    <section class="gradient-bg text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Schedule an Appointment</h1>
+            <p class="lead">We're here to help you see better</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="appointment-form">
+                        <h2 class="mb-4">Request an Appointment</h2>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="doctor" class="form-label">Preferred Doctor</label>
+                                <select class="form-select" id="doctor">
+                                    <option value="">Any Available Doctor</option>
+                                    <option value="dr-smith">Dr. John Smith</option>
+                                    <option value="dr-johnson">Dr. Sarah Johnson</option>
+                                    <option value="dr-chen">Dr. Michael Chen</option>
+                                    <option value="dr-davis">Dr. Emily Davis</option>
+                                    <option value="dr-wilson">Dr. Robert Wilson</option>
+                                    <option value="dr-martinez">Dr. Lisa Martinez</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Service Needed</label>
+                                <select class="form-select" id="service">
+                                    <option value="">Select a Service</option>
+                                    <option value="exam">Comprehensive Eye Exam</option>
+                                    <option value="cataract">Cataract Consultation</option>
+                                    <option value="glaucoma">Glaucoma Evaluation</option>
+                                    <option value="pediatric">Pediatric Eye Care</option>
+                                    <option value="retina">Retinal Evaluation</option>
+                                    <option value="cornea">Cornea Consultation</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Additional Information</label>
+                                <textarea class="form-control" id="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card info-card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Contact Information</h3>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong><br>
+                                (555) 123-4567</p>
+                                <p><strong>Email:</strong><br>
+                                appointments@yourpractice.com</p>
+                                <p><strong>Address:</strong><br>
+                                123 Main Street<br>
+                                City, State 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Office Hours</h3>
+                            <div class="contact-info">
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p>Saturday: 9:00 AM - 1:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Your Practice Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

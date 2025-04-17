@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Your Practice Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #4a90e2;
+            --light-blue: #87ceeb;
+        }
+        
+        body {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+            color: white;
+        }
+        
+        .nav-link {
+            font-size: 1.2rem;
+            color: white !important;
+        }
+        
+        .service-section {
+            padding: 3rem 0;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .service-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .service-list li:before {
+            content: "✓";
+            color: var(--primary-blue);
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gradient-bg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#" style="font-size: 1.5rem;">Your Practice Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointments.html">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="gradient-bg text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Our Services</h1>
+            <p class="lead">Comprehensive eye care for all ages</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="service-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">👁️</div>
+                            <h3 class="card-title">Comprehensive Eye Exams</h3>
+                            <ul class="service-list">
+                                <li>Routine vision testing</li>
+                                <li>Glaucoma screening</li>
+                                <li>Diabetic eye exams</li>
+                                <li>Pediatric eye care</li>
+                                <li>Contact lens fittings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">🔬</div>
+                            <h3 class="card-title">Cataract Surgery</h3>
+                            <ul class="service-list">
+                                <li>Advanced cataract removal</li>
+                                <li>Premium lens options</li>
+                                <li>Laser-assisted surgery</li>
+                                <li>Post-operative care</li>
+                                <li>Custom lens selection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">👁️‍🗨️</div>
+                            <h3 class="card-title">Glaucoma Treatment</h3>
+                            <ul class="service-list">
+                                <li>Comprehensive screening</li>
+                                <li>Medical management</li>
+                                <li>Laser treatments</li>
+                                <li>Surgical options</li>
+                                <li>Ongoing monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">👶</div>
+                            <h3 class="card-title">Pediatric Eye Care</h3>
+                            <ul class="service-list">
+                                <li>Child-friendly exams</li>
+                                <li>Vision development</li>
+                                <li>Strabismus treatment</li>
+                                <li>Amblyopia therapy</li>
+                                <li>School vision screening</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">👁️‍🗨️</div>
+                            <h3 class="card-title">Retinal Care</h3>
+                            <ul class="service-list">
+                                <li>Diabetic retinopathy</li>
+                                <li>Macular degeneration</li>
+                                <li>Retinal detachment</li>
+                                <li>Laser treatments</li>
+                                <li>Intravitreal injections</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">👁️‍🗨️</div>
+                            <h3 class="card-title">Cornea Services</h3>
+                            <ul class="service-list">
+                                <li>Corneal transplants</li>
+                                <li>Dry eye treatment</li>
+                                <li>Refractive surgery</li>
+                                <li>Keratoconus management</li>
+                                <li>Corneal infections</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Information -->
+    <section class="py-5 gradient-bg text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Insurance & Payment</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Accepted Insurance Plans</h3>
+                    <ul class="service-list">
+                        <li>Medicare</li>
+                        <li>Most major insurance providers</li>
+                        <li>Vision insurance plans</li>
+                        <li>Self-pay options available</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Payment Options</h3>
+                    <ul class="service-list">
+                        <li>Credit cards</li>
+                        <li>Health savings accounts</li>
+                        <li>Flexible spending accounts</li>
+                        <li>Payment plans available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Your Practice Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

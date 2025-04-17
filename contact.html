@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Practice Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #4a90e2;
+            --light-blue: #87ceeb;
+        }
+        
+        body {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+            color: white;
+        }
+        
+        .nav-link {
+            font-size: 1.2rem;
+            color: white !important;
+        }
+        
+        .contact-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .map-container {
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .map-placeholder {
+            background: #f8f9fa;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+        }
+        
+        .contact-info {
+            font-size: 1.2rem;
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gradient-bg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#" style="font-size: 1.5rem;">Your Practice Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctors.html">Our Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="appointments.html">Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="gradient-bg text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Contact Us</h1>
+            <p class="lead">We're here to help you see better</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center">
+                            <div class="contact-icon">📍</div>
+                            <h3 class="card-title">Our Location</h3>
+                            <div class="contact-info">
+                                <p>123 Main Street<br>
+                                City, State 12345</p>
+                                <p><strong>Parking:</strong><br>
+                                Free parking available in our lot</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center">
+                            <div class="contact-icon">📞</div>
+                            <h3 class="card-title">Contact Us</h3>
+                            <div class="contact-info">
+                                <p><strong>Phone:</strong><br>
+                                (555) 123-4567</p>
+                                <p><strong>Fax:</strong><br>
+                                (555) 123-4568</p>
+                                <p><strong>Email:</strong><br>
+                                info@yourpractice.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center">
+                            <div class="contact-icon">⏰</div>
+                            <h3 class="card-title">Office Hours</h3>
+                            <div class="contact-info">
+                                <p>Monday - Friday:<br>
+                                8:00 AM - 5:00 PM</p>
+                                <p>Saturday:<br>
+                                9:00 AM - 1:00 PM</p>
+                                <p>Sunday:<br>
+                                Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-placeholder">
+                    [Map Placeholder - Add your Google Maps embed code here]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="py-5 gradient-bg text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Emergency Care</h2>
+            <p class="lead">For after-hours emergencies, please call our emergency line:</p>
+            <p class="display-6">(555) 123-4567</p>
+            <p>Our on-call doctor will return your call promptly.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Your Practice Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
